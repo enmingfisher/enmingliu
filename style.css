@@ -2,6 +2,6 @@ main {
     background-color: brown;
 }
 
-header-nav {
+header-nav.header-nav-link {
     color: white;
 }
