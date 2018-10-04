@@ -1,7 +1,171 @@
-main {
-    background-color: brown;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-header-nav.header-nav-link {
-    color: white;
+body {
+    height: 100%;
 }
+
+/* grid position for whole site */
+.outer-site {
+    position: relative;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template: repeat(12, 1fr) / repeat(8, 1fr);
+}
+
+/* title font */
+.title {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 300%;
+}
+
+/* subtitle font */
+.sub-title {
+    font-family: 'Exo', sans-serif;
+    font-style: italic;
+    font-size: 150%;
+}
+
+/* paragraph font */
+.paragraph {
+    font-family: 'Exo', sans-serif;
+}
+
+/* header grid and height */
+.header-main {
+    grid-area: 1 / 1 / 2 / 9;
+    z-index: 9;
+    max-height: 75px;
+}
+
+/* space for logo */
+.logo-space {
+    width: 75px;
+    height: 75px;
+    float: left;
+    z-index: 10;
+}
+
+/* space for nav bar */
+nav {
+    float: right;
+    width: 700px;
+    z-index: 10;
+    text-align: center;
+}
+
+/* div containing links */
+.menu-space-inner {
+    margin: 10px;
+    padding: 25px;
+    display: inline-block;
+}
+
+/* acutal nav bar links */
+.header-nav-link {
+    padding-left: 35px;
+    padding-right: 35px;
+    color: whitesmoke;
+}
+
+/* removing underlines for links */
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+a:active {
+    color: lightcoral;
+}
+
+/* site excluding header and footer */
+.inner-site {
+    grid-area: 1 / 1 / 12 / 9;
+    display: grid;
+    grid-template: repeat(11, 1fr) / repeat(8, 1fr);
+    background-image: url("images/bill.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* introduction block with picture */
+.intro-block {
+    grid-area: 1 / 1 / 5 / 9;
+    min-height: 600px;
+}
+
+/* space for text in intro */
+.intro-content {
+    max-width: 70%;
+    margin-top: 22%;
+    margin-bottom: 18%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 10px;
+    text-align: center;
+    color: whitesmoke;
+    border: thick solid whitesmoke;
+    border-radius: 20px;
+}
+
+.intro-text-upper .intro-text-lower{
+    display: inline-block;
+}
+
+.intro-text {
+    color: whitesmoke;
+}
+
+/* objective block with text*/
+.objective-block {
+    grid-area: 5 / 1 / 7 / 9;
+
+    background: rgb(184, 131, 145);
+    mix-blend-mode: lighten;
+}
+
+.objective-content {
+    margin-top: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    position: relative bottom;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.objective-text-upper {
+    display: inline-block;
+    margin-bottom: 4%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 120%;   
+}
+
+.objective-text-lower {
+    display: inline-block;
+    font-size: 80%;
+}
+
+.objective-text {
+    color: black;
+}
+
+.skills-block {
+    background-color: whitesmoke;
+    grid-area: 7 / 1 / 10 / 9;
+}
+
+.contact-block {
+    grid-area: 10 / 1 / 12 / 9;
+}
+
+footer {
+    background-color: #192231;
+    grid-area: 12 / 1 / 13 / 9;
+}
+
