@@ -109,6 +109,8 @@ a:active {
     color: whitesmoke;
     border: thick solid whitesmoke;
     border-radius: 20px;
+    box-shadow: 3px 3px 2px black;
+    text-shadow: 3px 3px 2px black; 
 }
 
 .intro-text-upper .intro-text-lower{
@@ -123,8 +125,9 @@ a:active {
 .objective-block {
     grid-area: 5 / 1 / 7 / 9;
 
-    background: rgb(184, 131, 145);
+    background: rgb(122, 127, 156);
     mix-blend-mode: lighten;
+    box-shadow: inset 0px 3px 2px -2px rgba(0, 0, 0, 0.75);
 }
 
 .objective-content {
@@ -149,6 +152,7 @@ a:active {
 .objective-text-lower {
     display: inline-block;
     font-size: 80%;
+    text-shadow: 1px 1px 1px black;
 }
 
 .objective-text {
