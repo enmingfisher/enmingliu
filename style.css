@@ -113,7 +113,7 @@ a:active {
     text-shadow: 3px 3px 2px black; 
 }
 
-.intro-text-upper .intro-text-lower{
+.intro-text-upper, .intro-text-lower{
     display: inline-block;
 }
 
@@ -162,6 +162,84 @@ a:active {
 .skills-block {
     background-color: whitesmoke;
     grid-area: 7 / 1 / 10 / 9;
+}
+
+.skills-content {
+    background-color: dodgerblue;
+    min-height: 75%;
+    margin: 5%;
+    text-align: center;
+    color: #985E6D;
+    position: relative;
+}
+
+.skills-title {
+    background-color: lightcoral;
+    margin: 5px;
+    min-width: 90%;
+    display: inline-block;
+}
+
+.skills-large {
+    font-size: 200%;
+}
+
+/* widget things??? */
+/* each individual widget thing */
+.widget-left {
+    background-color: lightcoral;
+    float: left !important;
+    width: 300px !important;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    z-index: 17;
+    text-align: center;
+    position: relative;
+}
+
+.widget-right {
+    background-color: lightcoral;
+    float: right !important;
+    width: 300px !important;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    z-index: 17;
+    text-align: center;
+    position: relative;
+}
+
+.widget-center {
+    background-color: lightcoral;
+    display: inline-block;
+    width: 300px !important;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    z-index: 17;
+    text-align: center;
+    position: relative;
+}
+
+.widget-title-text, .widget-text-text {
+    bottom: 0 !important;
+    padding: 5px;
+    display: inline-block;
+}
+
+.skills-button {
+    background-color: lightcoral;
+    display: inline-block;
+    bottom: 0;
+    padding: 10px;
+    margin: 10px;
 }
 
 .contact-block {
