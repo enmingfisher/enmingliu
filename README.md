@@ -1,5 +1,5 @@
 # enmingliu
 
-Personal Website; Visual Resume
+Personal Website;
 
-Bill (En Ming) Liu [2018]
+Bill (En Ming) Liu, 2018
