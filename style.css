@@ -245,11 +245,52 @@ a:active {
 
 .contact-content {
     background-color: dodgerblue;
-    margin: 5%;
+    margin-top: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.contact-text {
+    background-color: lightcoral;
+    display: inline-block;
+    margin: 2%;
+}
+
+.contact-button {
+    background-color: lightcoral;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
 }
 
 footer {
     background-color: #192231;
     grid-area: 12 / 1 / 13 / 9;
+}
+
+.footer-text {
+    background-color: dodgerblue;
+    margin-top: 25px;
+    text-align: center;
+    color: #985E6D;
+}
+
+.footer-text-top {
+    background-color: lightcoral;
+    display: inline-block;
+    font-size: 70%;
+    width: 95%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.footer-text-bottom {
+    background-color: lightcoral;
+    display: inline-block;
+    font-size: 50%;
+    margin: 5px;
+    padding: 5px;
 }
 
