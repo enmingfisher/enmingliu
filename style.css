@@ -243,6 +243,10 @@ a:active {
     grid-area: 10 / 1 / 12 / 9;
 }
 
+.contact-content {
+    background-color: dodgerblue;
+}
+
 footer {
     background-color: #192231;
     grid-area: 12 / 1 / 13 / 9;
