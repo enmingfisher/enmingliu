@@ -78,8 +78,8 @@ nav {
 
 /* acutal nav bar links */
 .header-nav-link {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
     color: whitesmoke;
 }
 
@@ -210,7 +210,7 @@ a:active {
     height: 300px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 5%;
+    margin-left: 120px;
     margin-right: 5%;
     text-align: center;
     position: relative;
@@ -223,7 +223,7 @@ a:active {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 120px;
     text-align: center;
     position: relative;
 }
@@ -234,8 +234,6 @@ a:active {
     height: 300px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
     text-align: center;
     position: relative;
 }
