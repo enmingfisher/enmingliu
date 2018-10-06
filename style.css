@@ -45,8 +45,20 @@ body {
 .logo-space {
     width: 75px;
     height: 75px;
+    margin: 15px;
+    padding-top: 4px;
+    padding-bottom: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
     float: left;
     z-index: 10;
+    text-align: center;
+}
+
+.logo {
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
 }
 
 /* space for nav bar */
@@ -69,6 +81,10 @@ nav {
     padding-left: 35px;
     padding-right: 35px;
     color: whitesmoke;
+}
+
+.header-nav-link:hover {
+    color: gray;
 }
 
 /* removing underlines for links */
@@ -110,7 +126,7 @@ a:active {
     border: thick solid whitesmoke;
     border-radius: 20px;
     box-shadow: 3px 3px 2px black;
-    text-shadow: 3px 3px 2px black; 
+    /*text-shadow: 3px 3px 2px black;*/
 }
 
 .intro-text-upper, .intro-text-lower{
@@ -127,7 +143,7 @@ a:active {
 
     background: rgb(122, 127, 156);
     mix-blend-mode: lighten;
-    box-shadow: inset 0px 3px 2px -2px rgba(0, 0, 0, 0.75);
+    /* box-shadow: inset 0px 3px 2px -2px rgba(0, 0, 0, 0.75); */
 }
 
 .objective-content {
@@ -143,6 +159,7 @@ a:active {
 
 .objective-text-upper {
     display: inline-block;
+    margin-top: 10px;
     margin-bottom: 4%;
     margin-left: 15%;
     margin-right: 15%;
@@ -151,6 +168,8 @@ a:active {
 
 .objective-text-lower {
     display: inline-block;
+    margin-bottom: 0 !important;
+    margin-top: 30px !important;
     font-size: 80%;
     text-shadow: 1px 1px 1px black;
 }
@@ -162,20 +181,19 @@ a:active {
 .skills-block {
     background-color: whitesmoke;
     grid-area: 7 / 1 / 10 / 9;
+    min-height: 105%;
 }
 
 .skills-content {
-    background-color: dodgerblue;
     min-height: 75%;
-    margin: 5%;
+    margin: 4%;
     text-align: center;
     color: #985E6D;
     position: relative;
 }
 
 .skills-title {
-    background-color: lightcoral;
-    margin: 5px;
+    margin-bottom: 40px;
     min-width: 90%;
     display: inline-block;
 }
@@ -187,7 +205,6 @@ a:active {
 /* widget things??? */
 /* each individual widget thing */
 .widget-left {
-    background-color: lightcoral;
     float: left !important;
     width: 300px !important;
     height: 300px;
@@ -200,7 +217,6 @@ a:active {
 }
 
 .widget-right {
-    background-color: lightcoral;
     float: right !important;
     width: 300px !important;
     height: 300px;
@@ -213,7 +229,6 @@ a:active {
 }
 
 .widget-center {
-    background-color: lightcoral;
     display: inline-block;
     width: 300px !important;
     height: 300px;
@@ -225,72 +240,142 @@ a:active {
     position: relative;
 }
 
-.widget-title-text, .widget-text-text {
+.widget-icon {
+    max-width: 70%;
+    max-height: 70%;
+    display: inline-block;
+}
+
+.widget {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.widget-title-text {
+    margin-top: 20px;
+    bottom: 0 !important;
+    padding: 5px;
+    display: inline-block;
+}
+
+.widget-text-text {
+    margin-top: 5px;
     bottom: 0 !important;
     padding: 5px;
     display: inline-block;
 }
 
 .skills-button {
-    background-color: lightcoral;
     display: inline-block;
     bottom: 0;
     padding: 10px;
-    margin: 10px;
+    margin-top: 30px;
+    /*margin: 10px;*/
+}
+
+.flat-button {
+    background-color: #985E6D;
+    border: none;
+    color: whitesmoke;
+    padding: 15px 25px;
+    text-align: center;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.flat-button:hover {
+    background-color: rgb(102, 50, 64);
 }
 
 .contact-block {
     grid-area: 10 / 1 / 12 / 9;
+    background-image: url("images/Map-Background.png");
+    background-attachment: fixed;
+    background-position: left 100px center;
+    background-size: cover;
 }
 
 .contact-content {
-    background-color: dodgerblue;
-    margin-top: 7%;
+    margin-top: 80px;
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
-    color: whitesmoke;
+    color: #192231;
 }
 
 .contact-text {
-    background-color: lightcoral;
     display: inline-block;
     margin: 2%;
+    font-size: 20px;
 }
 
 .contact-button {
-    background-color: lightcoral;
     display: inline-block;
-    margin: 10px;
+    margin-top: 20px;
     padding: 10px;
 }
 
+.block-button {
+    background-color: #192231;
+    border: none;
+    color: whitesmoke;
+    padding: 15px 25px;
+    text-align: center;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.block-button:hover {
+    background-color: black;
+}
+
+/* footer elements */
 footer {
     background-color: #192231;
     grid-area: 12 / 1 / 13 / 9;
 }
 
 .footer-text {
-    background-color: dodgerblue;
+    color: #985E6D;
     margin-top: 25px;
     text-align: center;
-    color: #985E6D;
 }
 
 .footer-text-top {
-    background-color: lightcoral;
     display: inline-block;
     font-size: 70%;
     width: 95%;
-    margin: 5px;
     padding: 5px;
 }
 
 .footer-text-bottom {
-    background-color: lightcoral;
     display: inline-block;
-    font-size: 50%;
-    margin: 5px;
+    font-size: 70%;
     padding: 5px;
+    margin-top: 10px;
+}
+
+.footer-links {
+    min-width: 40%;
+    min-height: 40px;
+    text-align: center;
+}
+
+.footer-link-1, .footer-link-2, .footer-link-3, .footer-link-4 {
+    display: inline-block;
+    max-height: 30px;
+    max-width: 30px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.clip {
+    max-width: 100%;
+    max-height: 100%;
 }
 
